@@ -54,10 +54,10 @@ Repo: https://github.com/cashbags/makefun-news-image-20261125 (to be created aft
   repo_created_after_open, commit_in_repo, duplicate_snapshot. All are
   satisfied by construction: repo is public, owner cashbags = the account's
   GitHub login, created 2026-11-25T02:08:43Z (after the 00:00:00Z opening),
-  and the submitted commit must be the **GitHub HEAD**
-  `2543fcfc34614423b958f3abb60ed1fd36e0f77a` (verified via get-ref +
-  ls-remote) — NOT the local commit fd85678b, which holds the same files
-  but is not on GitHub (same pattern as news-image-20261120).
+  and the submitted commit must be the **GitHub HEAD at submit time —
+  verify it with get-ref + `git ls-remote` just before submitting** — NOT
+  the local commit, which holds the same files but is not on GitHub (same
+  pattern as news-image-20261120).
 - Bundle: `transcripts.tar.gz`, 1,304,949 bytes,
   sha256 `bb660cc0574a428621bcd6507f3130752b0d6da0be584dfc1370e2bdcbd565d0`
   (prompt-origin scheduled, prompt file, harness muse-app,
